@@ -29,7 +29,7 @@ int16_t main(void)
     InitApp();
 
     /* TODO <INSERT USER APPLICATION CODE HERE> */
-
+    Sleep ();// sleep before main loop
     while(1)
     {
         Sleep();
