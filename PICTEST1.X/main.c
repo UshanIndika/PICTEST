@@ -24,7 +24,8 @@ int16_t main(void)
 
     /* Configure the oscillator for the device */
     ConfigureOscillator();
-
+	
+	// test branch 1 is added     here
     /* Initialize IO ports and peripherals */
     InitApp();
 
