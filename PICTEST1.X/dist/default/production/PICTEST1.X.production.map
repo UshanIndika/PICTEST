@@ -62,10 +62,10 @@ Program Memory  [Origin = 0x100, Length = 0x17efe]
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x100                0xc8           0x12c  (300)
-.text                        0x1c8                0x14            0x1e  (30)
-.dinit                       0x1dc                 0x2             0x3  (3)
+.text                        0x1c8                0x16            0x21  (33)
+.dinit                       0x1de                 0x2             0x3  (3)
 
-                     Total program memory used (bytes):          0x14d  (333) <1%
+                     Total program memory used (bytes):          0x150  (336) <1%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -102,13 +102,13 @@ External Symbols in Program Memory (by address):
                   0x0001be                  __AltMathError
                   0x0001c4                  __DefaultInterrupt
                   0x0001c8                  _main
-                  0x0001d0                  _ConfigureOscillator
-                  0x0001d6                  _InitApp
+                  0x0001d2                  _ConfigureOscillator
+                  0x0001d8                  _InitApp
 
 External Symbols in Program Memory (by name):
 
-                  0x0001d0                  _ConfigureOscillator
-                  0x0001d6                  _InitApp
+                  0x0001d2                  _ConfigureOscillator
+                  0x0001d8                  _InitApp
                   0x00019a                  __AddressError
                   0x0001b2                  __AltAddressError
                   0x0001be                  __AltMathError
@@ -273,14 +273,14 @@ userdata
  .debug_abbrev    0x0000b5         0x7d build/default/production/traps.o
  .debug_abbrev    0x000132         0x34 build/default/production/user.o
 
-.debug_line       0x000000        0x335
+.debug_line       0x000000        0x33d
  *(.debug_line)
  .debug_line      0x000000         0x24 build/default/production/configuration_bits.o
  .debug_line      0x000024         0x24 build/default/production/interrupts.o
- .debug_line      0x000048         0xa6 build/default/production/main.o
- .debug_line      0x0000ee         0x4a build/default/production/system.o
- .debug_line      0x000138        0x1b5 build/default/production/traps.o
- .debug_line      0x0002ed         0x48 build/default/production/user.o
+ .debug_line      0x000048         0xae build/default/production/main.o
+ .debug_line      0x0000f6         0x4a build/default/production/system.o
+ .debug_line      0x000140        0x1b5 build/default/production/traps.o
+ .debug_line      0x0002f5         0x48 build/default/production/user.o
 
 .debug_frame      0x000000        0x110
  *(.debug_frame)
@@ -1502,13 +1502,13 @@ __c30_signature
  __c30_signature
                   0x000126          0x6 c:/program files (x86)/microchip/xc16/v1.21/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
 
-.text             0x0001c8         0x14
- .text            0x0001c8          0x8 build/default/production/main.o
+.text             0x0001c8         0x16
+ .text            0x0001c8          0xa build/default/production/main.o
                   0x0001c8                  _main
- .text            0x0001d0          0x6 build/default/production/system.o
-                  0x0001d0                  _ConfigureOscillator
- .text            0x0001d6          0x6 build/default/production/user.o
-                  0x0001d6                  _InitApp
+ .text            0x0001d2          0x6 build/default/production/system.o
+                  0x0001d2                  _ConfigureOscillator
+ .text            0x0001d8          0x6 build/default/production/user.o
+                  0x0001d8                  _InitApp
 
-.dinit            0x0001dc          0x2
- .dinit           0x0001dc          0x2 data_init
+.dinit            0x0001de          0x2
+ .dinit           0x0001de          0x2 data_init
